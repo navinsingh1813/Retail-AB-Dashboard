@@ -8,81 +8,112 @@ This Power BI Dashboard comprehensively overviews Retail AB Sales, Profits, and 
 
 ## Sales Analysis Dashboard Overview
 
-### 1. Key Performance Indicators (KPIs)
+This dashboard provides a comprehensive view of key sales metrics, including total sales, orders, profits, and more, segmented by categories, regions, and sub-categories. The dashboard is useful for analyzing sales trends, profit margins, and performance in different segments.
 
-The dashboard provides a high-level view of key metrics that define the overall business performance:
+### 1. Key Metrics (Sales, Orders, Profits)
 
-- **Total Sales**: 1.35M
-- **Total Orders**: 5,923
-- **Total Profits**: 176.22K
+**Visual Used: KPI Cards**
 
-These KPIs summarize revenue, transaction number, and profit margins for the analyzed period, providing an at-a-glance view of business health.
+**Description:
+
+  - **Sales: 1.35M**
+  - **Orders: 5,923**
+  - **Profits: 176.22K**
+    
+These KPI (Key Performance Indicator) cards display the most critical metrics of the business at a glance, making it easy to track overall performance. The values are prominently displayed to show total sales, the number of orders, and the total profit for a quick overview of business health.
 
 ### 2. Quantity Sales by Year
 
-The line chart on the left side shows the quantity of products sold each year, along with the corresponding sales figures:
+**Visual Used: Combo Chart (Bar and Line Chart)**
 
-- **2018**: No significant sales or quantity recorded.
-- **2019**:
-- **Quantity**: 10K units
-- **Sales**: 0.61M
-- **2020**:
-- **Quantity**: 12K units
-- **Sales**: 0.73M
+**Description:** This chart combines a line chart for sales trends over the years (2018, 2019, and 2020) and a bar chart for the corresponding quantity of sales during the same period. The line represents the sales amount, while the bars represent the quantity of items sold.
 
-The trend indicates a positive growth trajectory, with an increase in both sales volume and revenue over the years.
+**Key Data:**
 
-### 3. Sales by Category
+  - **2018:** 0 quantity, 0 sales (No sales data).
+  - **2019: 10K** units sold, totaling **0.61M** sales.
+  - **2020: 12K** units sold, totaling **0.73M** sales.
 
-The pie chart in the top-right corner breaks down sales into three main product categories:
+The visual shows consistent growth in both sales and quantity sold, with the peak occurring in 2020.
 
-- **Technology**: 414.46K (30.76%)
-- **Office Supplies**: 431.91K (32.06%)
-- **Furniture**: 501.01K (37.18%)
+### 3. Sub-Category Wise Sales
 
-**Furniture** leads in sales, followed by Office Supplies and Technology, suggesting that furniture products are the main revenue drivers.
+**Visual Used: Horizontal Bar Chart**
 
-### 4. Sales by Region
+**Description:** This bar chart lists sales data by product Sub-Category. Each bar represents the total sales for a specific sub-category, such as Phones, Chairs, Storage, etc. The length of each bar reflects the magnitude of sales for that sub-category.
 
-The second pie chart on the bottom-right provides a geographical breakdown of sales:
+**Top Sub-Categories:**
 
-- **Phones and Chairs** are the top-performing sub-categories, each contributing **0.18M** in sales.
-- **Storage, Binders, and Tables** follow with sales figures ranging from **0.12M** to **0.13M**.
-- Sub-categories like **Fasteners** and **Labels** contribute the least to overall sales, indicating lower demand or underperformance in these segments.
+  - **Phones: 0.18M** sales.
+  - **Chairs: 0.18M** sales.
+  - **Storage: 0.13M** sales.
+  - **Binders: 0.12M** sales.
+    
+This chart provides insight into which products generate the most revenue, helping stakeholders focus on the most profitable sub-categories.
 
-### 6. Category Sales and Profit Analysis
+### 4. Sales by Category
 
-The table at the bottom-left breaks down sales, quantity, and profit for different product categories and their sub-categories:
+**Visual Used: Donut Chart**
 
-- **Furniture**:
-  - **Total Sales**: 4.14M
-  - **Quantity Sold**: 4,636 units
-  - **Total Profit**: 9,987.83
-  - **Top Sub-Categories**: Tables (1.21M sales), Chairs (1.79M sales).
-  - Notable Outlier: **Bookcases** recorded a negative profit (-350.23), suggesting either heavy discounting or cost inefficiencies.
+**Description:** This donut chart displays the proportion of total sales by Category. It segments the sales into three categories:
 
-- **Office Supplies**:
-   - **Total Sales**: 4.31M
-   - **Quantity Sold**: 13,691 units
-   - **Total Profit**: 75.43K
-   - **Top Sub-Categories**: Binders (1.23M sales), Appliances (68.87K sales).
-   - **Highest Profit**: Binders (18.36K).
+  - **Technology: 30.76%** of total sales (**414.46K**).
+  - **Office Supplies: 32.06%** of total sales (**431.91K**).
+  - **Furniture: 37.18%** of total sales (**501.01K**).
 
- ### 7. Parent Sales in %
+This visual is helpful for understanding the distribution of sales across broad product categories, indicating that **Furniture** is the top-performing category.
 
- The dashboard also provides a percentage share of total sales for each category:
+### 5. Sales by Region
 
-- Furniture: **100**% (Indicating only sub-category data shown)
-- Office Supplies: **100**% (Similar reason)
+**Visual Used: Donut Chart**
 
-This metric helps in understanding the contribution of each sub-category to the parent category.
+**Description:** Another donut chart that shows the distribution of sales by Region. Each segment represents the total sales contribution from a specific geographical region.
 
-### Insights & Recommendations
+**Regional Sales:**
 
-- **High-Performing Regions**: Focus marketing efforts and inventory planning in the **Southern and Central regions** to further capitalize on their strong sales performance.
-- **Underperforming Sub-Categories**: Investigate the poor performance of sub-categories like **Bookcases** and consider promotional strategies to improve profitability.
-- **Category Optimization**: As **Furniture** is the top-selling category, expanding this product line or introducing complementary products could drive additional revenue.
+  - **West: 16.11%** of total sales (**217.11K**).
+  - **East: 21.9%** of total sales (**295.12K**).
+  - **Central: 32.76%** of total sales (**441.35K**).
+  - **South: 29.23%** of total sales (**393.8K**).
 
+This chart shows that the **Central** region has the highest contribution to total sales, followed by the **South** region.
+
+ ### 6. Category-Wise Sales and Profits Table
+
+ **Visual Used: Matrix Table**
+
+ **Description:** A detailed table that shows the breakdown of **Sales, Quantity, Profit,** and **Parent Sales** in % by different **Categories** and **Sub-Categories**.
+
+**Key Data**
+
+- **Furniture**
+    - Sales: **414.46K**
+    - Quantity: **4636**
+    - Profit: **9,987.83**
+    - Parent Sales %: **100.00%**
+
+- **Office Supplies:**
+    - Sales: **431.91K**
+    - Quantity: **13691**
+    - Profit: **75,434.01**
+    - Parent Sales %: **100.00%**
+ 
+This matrix table offers an in-depth view of product category performance and profitability. It is particularly useful for drilling down into specific categories to analyze individual performance and margins.
+
+### Visual Summary:
+
+- **KPI Cards:** Provides high-level overviews of critical business metrics like Sales, Orders, and Profits.
+- **Combo Chart (Line and Bar):** Shows yearly trends in both sales quantity and revenue, making it easy to compare the two metrics.
+- **Horizontal Bar Chart:** Compares sales by sub-category, highlighting which products are the most successful.
+- **Donut Charts:** Used to show the proportional breakdown of sales by category and by region, making it visually intuitive to understand distribution.
+- **Matrix Table:** Displays detailed sales, quantity, and profit data for categories and sub-categories, offering a granular view of business performance.
+
+### Key Insights and Recommendations:
+
+- **Category Focus:** Furniture is the leading category by sales volume, followed by Office Supplies and Technology. Concentrating more marketing efforts on the top-performing categories could drive higher profits.
+- **Sub-Category Potential:** Phones and Chairs are top sub-categories and should be prioritized in stock and promotions to leverage their sales performance.
+- **Regional Insights:** The Central region leads in sales, followed by the South. Expanding operations and targeting marketing campaigns in these regions could further boost revenue.
+- **Profitability Insights:** The matrix table reveals where the highest profits are being generated, helping to identify categories with the best margin potential.
 
 
 ## Calendar Date wise Sales Report  
@@ -198,18 +229,117 @@ Both metrics show similar values for each year, indicating that orders are shipp
 - **Order vs. Ship Date Analysis**: The close match between order and ship date sales shows efficient order management. Maintain this efficiency to continue delivering a positive customer experience.
 
 
-##
 
+## Region-wise Sales Report
 
+![Region-wise Sale](https://github.com/navinsingh1813/Retail-AB-Dashboard/blob/main/Image/3.%20Region%20wise%20Sales.png)
 
+## Region-wise Sales Dashboard Overview
 
+This dashboard provides an in-depth analysis of sales performance across different regions, highlighting key metrics such as sales, orders, and profits. It offers breakdowns by region, year, and state to help analyze trends and identify the most profitable geographical areas.
 
+### 1. Key Metrics (Sales, Orders, Profits, Regions)
 
+**Visual Used: KPI Cards**
 
+- **Description:**
+    - **Sales: 1.35M**
+    - **Orders: 5,923**
+    - **Profits: 176.22K**
+    - **Regions: Central**
 
+These KPI cards display critical business metrics at a glance, including the total sales amount, number of orders, total profit, and the selected region (Central). This helps to quickly track the overall performance.
 
+### 2. Total Sales by Year
 
+**Visual Used: Line Chart**
 
+**Description:** This line chart displays the total sales performance year over year, showing how sales have grown from 2018 to 2020. It uses a single line to represent the total sales across all regions.
+
+**Key Data:**
+
+ - **2018:** No data
+ - **2019: 0.61M** sales
+ - **2020: 0.73M** sales
+
+The chart shows a steady increase in sales from 2018 to 2020, indicating consistent business growth.
+
+### 3. Sales and Profits by Region and Person
+
+**Visual Used: Stacked Bar Chart**
+
+**Description:** This stacked bar chart shows the sales and profits broken down by region (West, East, Central, South). Each bar is divided into two sections: the lighter shade represents sales, and the darker shade represents profits. The height of the bars indicates the total sales per region, while the stacked sections show the contribution of sales and profits.
+
+**Key Data:**
+
+ -   **West:** Sales **0.44M**, Profit **0.07M**
+ -   **East:** Sales **0.39M**, Profit **0.05M**
+ -   **Central:** Sales **0.30M**, Profit **0.03M**
+ -   **South:** Sales **0.22M**, Profit **0.03M**
+
+This visual helps to compare the regions by both total sales and profitability.
+
+### 4. Total Sales by Year and Region
+
+**Visual Used: Bar Chart**
+
+**Description:** This bar chart breaks down the total sales by year and region. Each bar shows the total sales for a given year, with different colors representing different regions.
+
+**Key Data:**
+
+- **2019:**
+     - West: **0.18M**
+     - East: **0.15M**
+     - Central: **0.03M**
+     - South: **0.03M**
+
+- **2020:**
+    - West: **0.61M**
+    - East: **0.39M**
+    - Central: **0.30M**
+    - South: **0.22M**
+ 
+This chart provides insight into how each region has contributed to total sales year by year.
+
+### 5. Total Sales by Region
+
+**Visual Used: Donut Chart**
+
+**Description:** This donut chart visualizes the proportion of total sales generated by each region. The chart is segmented into different colors representing different regions, and the percentage and absolute values are displayed for each region.
+
+**Regional Sales:**
+
+   - **West: 16.11%** of total sales **(217.11K)**
+   - **East: 21.9%** of total sales **(295.12K)**
+   - **Central: 32.76%** of total sales **(441.35K)**
+   - **South: 29.23%** of total sales **(393.8K)**
+
+This visual is useful for understanding the distribution of sales across the four regions.
+
+### 6. Total Sales by State
+
+**Visual Used: Map Visualization**
+
+**Description:** This map provides a geographical breakdown of sales across different states in the United States. The darker shades represent higher sales volume, allowing users to quickly identify states where sales are concentrated.
+
+**Key Insights:**
+
+  - The map highlights the sales concentration in different states, making it easy to see regional performance and geographical trends.
+
+### Visual Summary:
+
+  - **KPI Cards:** Display core business metrics such as total sales, orders, profits, and selected region.
+  - **Line Chart:** Displays sales performance over the years, showcasing year-over-year growth.
+  - **Stacked Bar Chart:** Compares sales and profits across different regions, giving a dual perspective on revenue and profitability.
+  - **Bar Chart:** Breaks down total sales by year and region, showing how each region performed annually.
+  - **Donut Chart:** Displays the proportional breakdown of sales by region, giving a clear picture of regional sales distribution.
+  - **Map Visualization:** Provides a geographical view of sales performance by state, highlighting regional hotspots and areas for improvement.
+
+### Key Insights and Recommendations:
+
+  - **Regional Focus:** The Central region is the top-performing region in terms of sales, contributing over 32% of total sales. Expanding marketing efforts and investments in this region could further increase profitability.
+  - **State-Level Sales Strategy:** The map visualization highlights key states contributing to sales. Focused marketing campaigns in high-performing states or efforts to increase market share in lower-performing states could provide growth opportunities.
+  - **Profitability Insights:** The West region has a higher profit margin relative to its total sales. Prioritizing high-profit regions could lead to an overall increase in business profitability.
 
 
 
